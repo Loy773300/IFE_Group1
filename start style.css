@@ -1,0 +1,28 @@
+ body {height: 100vh; margin: 0;
+      background: linear-gradient(270deg,
+        red,
+        orange,
+        greenyellow,
+        green,
+        skyblue,
+        indigo,
+        violet);
+      background-size: 1400% 1400%;
+      animation: rainbowFlow 15s ease infinite;}
+
+    @keyframes rainbowFlow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}}
+
+@font-face {font-family: 'helvetica'; /* vibe+Library, start */
+  src: url('./폰트/Helvetica Bold.ttf') format('truetype');}
+@font-face {font-family: 'PP'; /* 제목 폰트 */
+  src: url('./폰트/PPEditorialOld-UltraboldItalic.otf') format('opentype');}
+@font-face {font-family: 'Pretender'; /* 한글설명 폰트 */
+  src: url('./폰트/Pretendard-Bold.ttf') format('truetype');}
+
+/* 요소별로 폰트 적용 */
+.font-1 {font-family: 'helvetica', sans-serif; font-weight: bold;}
+.font-2 {font-family: 'PP', sans-serif;}
+.font-3 {font-family: 'Pretender', serif;}
